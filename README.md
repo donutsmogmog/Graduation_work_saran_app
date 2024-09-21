@@ -1,3 +1,6 @@
+### ER図
+[![Image from Gyazo](https://i.gyazo.com/1d0fd9323b9b3f937afa29aa05236384.png)](https://gyazo.com/1d0fd9323b9b3f937afa29aa05236384)
+
 ### サービス概要
 
 K-POPアイドルを全力で応援したい！そんなファンに役立つスケジュール管理ツールです。
