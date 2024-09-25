@@ -71,5 +71,10 @@ K-POPアイドルを全力で応援したい！そんなファンに役立つス
 Figma：https://www.figma.com/design/FRgf2nNpLLaUfKEzKbyTTf/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9C_%E7%94%BB%E9%9D%A2%E9%81%B7%E7%A7%BB%E5%9B%B31?node-id=5-60&node-type=canvas&t=ujLmajIis78UabRD-0
 
 ### ER図
-[![Image from Gyazo](https://i.gyazo.com/1d0fd9323b9b3f937afa29aa05236384.png)](https://gyazo.com/1d0fd9323b9b3f937afa29aa05236384)
+
+2024/9/25　レビュー返却を経て更新
+ 
+- 親テーブルと子テーブル、外部キー、リレーションの訂正をしました。
+
+[![Image from Gyazo](https://i.gyazo.com/2ab1f1361c0280b70fe9be0e726bf2ae.png)](https://gyazo.com/2ab1f1361c0280b70fe9be0e726bf2ae)
 
