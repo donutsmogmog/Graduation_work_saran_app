@@ -72,9 +72,7 @@ Figma：https://www.figma.com/design/FRgf2nNpLLaUfKEzKbyTTf/%E5%8D%92%E6%A5%AD%E
 
 ### ER図
 
-2024/9/25　レビュー返却を経て更新
- 
-- 親テーブルと子テーブル、外部キー、リレーションの訂正をしました。
+2024/9/28　LGTM時コメントを経て更新
+- リレーションの誤表記を修正しました
 
-[![Image from Gyazo](https://i.gyazo.com/2ab1f1361c0280b70fe9be0e726bf2ae.png)](https://gyazo.com/2ab1f1361c0280b70fe9be0e726bf2ae)
-
+[![Image from Gyazo](https://i.gyazo.com/2f3f96e6841404cd9906a0422839c824.png)](https://gyazo.com/2f3f96e6841404cd9906a0422839c824)
