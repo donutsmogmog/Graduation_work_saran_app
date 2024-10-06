@@ -1,0 +1,34 @@
+ja:
+  helpers:
+    submit:
+      create: 登録
+      submit: 保存
+      update: 更新
+    label:
+      email: メールアドレス
+      password: パスワード
+  static_pages:
+    top:
+      schedule_index: スケジュールへ
+  user_sessions:
+    new:
+      title: ログイン
+      login: ログイン
+      to_register_page: 登録ページへ
+      password_forget: パスワードをお忘れの方はこちら
+  users:
+    new:
+      title: ユーザー登録
+      to_login_page: ログインページへ
+  schedules:
+    index:
+      back_top_page: トップページへ
+      create_schedule: スケジュール登録
+    new:
+      back_schedule_index: スケジュール一覧へ
+  header:
+    login: ログイン
+    logout: ログアウト
+    schedule: 掲示板
+    schedule_index: スケジュール一覧
+    create_schedule: スケジュール登録
