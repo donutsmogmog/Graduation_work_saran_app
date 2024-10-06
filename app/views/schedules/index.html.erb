@@ -2,7 +2,7 @@
 
 <% content_for :title, "Schedules" %>
 
-<h1><%= t('header.schedule_index') %></h1>
+<h1><%= t("header.schedule_index") %></h1>
 
 <div id="schedules">
   <% @schedules.each do |schedule| %>
@@ -13,6 +13,6 @@
   <% end %>
 </div>
 
-<%= link_to t('.create_schedule'), new_schedule_path %>
+<%= link_to t(".create_schedule"), new_schedule_path %>
 <br>
-<%= link_to t('.back_top_page'), root_path %>
+<%= link_to t(".back_top_page"), root_path %>
