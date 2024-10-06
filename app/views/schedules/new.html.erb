@@ -1,11 +1,11 @@
 <% content_for :title, "New schedule" %>
 
-<h1>New schedule</h1>
+<h1><%= t("header.create_schedule") %></h1>
 
 <%= render "form", schedule: @schedule %>
 
 <br>
 
 <div>
-  <%= link_to "Back to schedules", schedules_path %>
+  <%= link_to t(".back_schedule_index"), schedules_path %>
 </div>

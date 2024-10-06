@@ -1,0 +1,16 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      schedule: スケジュール
+    attributes:
+      user:
+        email: メールアドレス
+        name: ユーザーネーム
+        password_digest: パスワード確認
+      schedule:
+        title: タイトル
+        description: 内容
+        start_time: 開始時間
+        end_time: 終了時間
+        show_remaining_time: 通知しますか
