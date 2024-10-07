@@ -7,7 +7,8 @@ ja:
       user:
         email: メールアドレス
         name: ユーザーネーム
-        password_digest: パスワード確認
+        password: パスワード
+        password_confirmation: パスワード確認
       schedule:
         title: タイトル
         description: 内容
