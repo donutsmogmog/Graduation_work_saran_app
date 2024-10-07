@@ -10,7 +10,8 @@ ja:
   static_pages:
     top:
       to_schedule_index: スケジュールへ
-      to_register_page: ユーザー登録へ
+      to_register_page: ユーザー登録
+      to_login_page: ログイン
   user_sessions:
     new:
       title: ログイン
