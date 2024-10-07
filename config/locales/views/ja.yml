@@ -9,7 +9,8 @@ ja:
       password: パスワード
   static_pages:
     top:
-      schedule_index: スケジュールへ
+      to_schedule_index: スケジュールへ
+      to_register_page: ユーザー登録へ
   user_sessions:
     new:
       title: ログイン
@@ -19,10 +20,10 @@ ja:
   users:
     new:
       title: ユーザー登録
-      to_login_page: ログインページへ
+      to_root_page: トップページへ
   schedules:
     index:
-      back_top_page: トップページへ
+      to_root_page: トップページへ
       create_schedule: スケジュール登録
     new:
       back_schedule_index: スケジュール一覧へ
