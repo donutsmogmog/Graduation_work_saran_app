@@ -16,3 +16,5 @@
 <%= link_to t(".create_schedule"), new_schedule_path %>
 <br>
 <%= link_to t(".to_root_page"), root_path %>
+<br>
+<%= link_to 'ログアウト', logout_path, data: { turbo_method: :delete } %>
