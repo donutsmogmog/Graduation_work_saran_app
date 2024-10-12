@@ -26,8 +26,13 @@ ja:
     index:
       to_root_page: トップページへ
       create_schedule: スケジュール登録
+      show_schedule: スケジュール詳細
     new:
       back_schedule_index: スケジュール一覧へ
+    show:
+      edit_schedule: スケジュール編集
+      back_schedule_index: スケジュール一覧へ
+      destroy_schedule: スケジュール削除
   header:
     login: ログイン
     logout: ログアウト
