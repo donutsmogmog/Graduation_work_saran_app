@@ -3,12 +3,11 @@ class SchedulesController < ApplicationController
 
   # GET /schedules or /schedules.json
   def index
-    @schedules = Schedule.all
+    @schedules = current_user.schedules.order("start_time asc")
   end
 
   # GET /schedules/1 or /schedules/1.json
-  def show
-  end
+  def show; end
 
   # GET /schedules/new
   def new
@@ -16,8 +15,7 @@ class SchedulesController < ApplicationController
   end
 
   # GET /schedules/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /schedules or /schedules.json
   def create

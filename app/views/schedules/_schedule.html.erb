@@ -1,26 +1,26 @@
 <div id="<%= dom_id schedule %>">
   <p>
-    <strong>Title:</strong>
+    <strong><%= I18n.t('activerecord.attributes.schedule.title') %></strong>
     <%= schedule.title %>
   </p>
 
   <p>
-    <strong>Description:</strong>
+    <strong><%= I18n.t('activerecord.attributes.schedule.description') %></strong>
     <%= schedule.description %>
   </p>
 
   <p>
-    <strong>Start time:</strong>
+    <strong><%= I18n.t('activerecord.attributes.schedule.start_time') %></strong>
     <%= schedule.start_time %>
   </p>
 
   <p>
-    <strong>End time:</strong>
+    <strong><%= I18n.t('activerecord.attributes.schedule.end_time') %></strong>
     <%= schedule.end_time %>
   </p>
 
   <p>
-    <strong>Show remaining time:</strong>
+    <strong><%= I18n.t('activerecord.attributes.schedule.show_remaining_time') %></strong>
     <%= schedule.show_remaining_time %>
   </p>
 
