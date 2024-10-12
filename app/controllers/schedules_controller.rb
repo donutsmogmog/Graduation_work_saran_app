@@ -21,7 +21,7 @@ class SchedulesController < ApplicationController
 
   # POST /schedules or /schedules.json
   def create
-    @schedule = Schedule.new(schedule_params)
+    @schedule = current_user.schedules.build(schedule_params)
 
     respond_to do |format|
       if @schedule.save
@@ -65,6 +65,6 @@ class SchedulesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def schedule_params
-    params.require(:schedule).permit(:title, :description, :start_time, :end_time, :show_remaining_time)
+    params.require(:schedule).permit(:title, :description, :start_time, :end_time, :show_remaining_time).merge(category_id: 1, artist_id: 1)
   end
 end

@@ -8,4 +8,6 @@ class User < ApplicationRecord
   validates :name, presence: true, length: { maximum: 255 }
   # メールアドレスのバリデーション：形式チェックも加えた
   validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP }
+
+  has_many :schedules, dependent: :destroy
 end
