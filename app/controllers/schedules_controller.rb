@@ -63,6 +63,6 @@ class SchedulesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def schedule_params
-    params.require(:schedule).permit(:title, :description, :start_time, :end_time, :show_remaining_time).merge(category_id: 1, artist_id: 1)
+    params.require(:schedule).permit(:title, :description, :artist_id, :category_id, :start_time, :end_time, :show_remaining_time)
   end
 end

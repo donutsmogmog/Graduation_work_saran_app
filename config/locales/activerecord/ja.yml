@@ -15,3 +15,7 @@ ja:
         start_time: 開始時間
         end_time: 終了時間
         show_remaining_time: 通知しますか
+      artist:
+        name: アーティスト
+      category:
+        name: カテゴリー
