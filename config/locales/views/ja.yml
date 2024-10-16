@@ -1,4 +1,14 @@
 ja:
+  defaults:
+    flash_message:
+      created: "%{item}を作成しました"
+      not_created: "%{item}を作成出来ませんでした"
+      require_login: ログインしてください
+      not_authorized: 権限がありません
+      updated: "%{item}を更新しました"
+      not_updated: "%{item}を更新出来ませんでした"
+      deleted: "%{item}を削除しました"
+      delete_confirm: 削除しますか
   helpers:
     submit:
       create: 登録
@@ -33,9 +43,13 @@ ja:
       edit_schedule: スケジュール編集
       back_schedule_index: スケジュール一覧へ
       destroy_schedule: スケジュール削除
+    edit:
+      show_schedule: スケジュール詳細
+      back_schedule_index: スケジュール一覧へ
   header:
     login: ログイン
     logout: ログアウト
     schedule: 掲示板
     schedule_index: スケジュール一覧
     create_schedule: スケジュール登録
+    edit_schedule: スケジュール編集
