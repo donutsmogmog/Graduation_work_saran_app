@@ -4,14 +4,16 @@
 
 <h1><%= t("header.schedule_index") %></h1>
 
-<div id="schedules">
-  <% @schedules.each do |schedule| %>
-    <%= render schedule %>
-    <p>
-      <%= link_to t(".show_schedule"), schedule %>
-    </p>
-  <% end %>
-</div>
+<%= month_calendar events: @schedules do |date, schedules| %>
+  <div class="border p-2 h-32">
+    <div class="text-xs font-semibold text-gray-700"><%= date.day %></div>
+    <% schedules.each do |schedule| %>
+      <div class="mt-2 p-1 bg-blue-500 text-white text-xs rounded">
+        <%= link_to schedule.title, schedule %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
 
 <%= link_to t(".create_schedule"), new_schedule_path %>
 <br>

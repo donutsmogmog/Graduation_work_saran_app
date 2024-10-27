@@ -1,12 +1,13 @@
 services:
   db:
     image: postgres
+    platform: linux/amd64
     restart: always
     environment:
       TZ: Asia/Tokyo
       POSTGRES_PASSWORD: password
     volumes:
-      - postgresql_data:/var/lib/postgresql
+      - graduation_work_saran_app_postgresql_data:/var/lib/postgresql/data
     ports:
       - 5432:5432
     healthcheck:
@@ -34,5 +35,5 @@ services:
         condition: service_healthy
 volumes:
   bundle_data:
-  postgresql_data:
+  graduation_work_saran_app_postgresql_data:
   node_modules:
