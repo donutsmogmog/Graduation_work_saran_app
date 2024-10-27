@@ -10,9 +10,9 @@ gem "pg", "~> 1.1"
 gem "puma", ">= 5.0"
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
-# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+# Hotwire"s SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
-# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+# Hotwire"s modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
 gem "cssbundling-rails"
@@ -45,7 +45,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
-  gem 'brakeman', '6.2.2', require: false
+  gem "brakeman", "6.2.2", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
