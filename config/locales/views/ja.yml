@@ -20,13 +20,13 @@ ja:
   static_pages:
     top:
       to_schedule_index: スケジュールへ
-      to_register_page: ユーザー登録
+      to_register_page: 始める（会員登録）
       to_login_page: ログイン
   user_sessions:
     new:
       title: ログイン
       login: ログイン
-      to_register_page: 登録ページへ
+      to_register_page: 始める
       password_forget: パスワードをお忘れの方はこちら
   users:
     new:
