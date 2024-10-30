@@ -3,8 +3,7 @@
 <%= render @schedule %>
 
 <div>
-  <%= link_to t(".edit_schedule"), edit_schedule_path(@schedule) %> |
-  <%= link_to t(".back_schedule_index"), schedules_path %>
+  <%= link_to t(".edit_schedule"), edit_schedule_path(@schedule) %> 
 
   <%= link_to t(".destroy_schedule"), '#', class: 'text-red-600 hover:text-red-800 delete-link', data: { post_url: schedule_path(@schedule) } %>
 

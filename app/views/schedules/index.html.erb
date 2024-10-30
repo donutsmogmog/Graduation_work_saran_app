@@ -1,22 +1,20 @@
-<p style="color: green"><%= notice %></p>
-
-<% content_for :title, "Schedules" %>
-
-<h1><%= t("header.schedule_index") %></h1>
-
+<p class="text-green-500"><%= notice %></p>
+<br>
+<h1 class="text-2xl font-semibold mb-4"><%= t("header.schedule_index") %></h1>
+<br>
 <%= month_calendar events: @schedules do |date, schedules| %>
-  <div class="border p-2 h-32">
-    <div class="text-xs font-semibold text-gray-700"><%= date.day %></div>
-    <% schedules.each do |schedule| %>
-      <div class="mt-2 p-1 bg-blue-500 text-white text-xs rounded">
-        <%= link_to schedule.title, schedule %>
-      </div>
-    <% end %>
+  <div class="border border-black p-10 h-40 relative"> <!-- relative を追加 -->
+    <div class="text-xs font-semibold text-black absolute top-2 left-2"> <!-- absolute を使って左上に配置 -->
+      <%= date.day %>
+    </div>
+    <div class="mt-4"> <!-- mt-8 で日付との余白を調整 -->
+      <% schedules.each do |schedule| %>
+        <div class="mt-1 p-1 bg-primary text-white text-xs rounded">
+          <%= link_to schedule.title, schedule %>
+        </div>
+      <% end %>
+    </div>
   </div>
 <% end %>
-
-<%= link_to t(".create_schedule"), new_schedule_path %>
 <br>
-<%= link_to t(".to_root_page"), root_path %>
-<br>
-<%= link_to 'ログアウト', logout_path, data: { turbo_method: :delete } %>
+<%= link_to t(".to_root_page"), root_path, class: "mt-4 text-blue-500 hover:text-blue-700" %>
