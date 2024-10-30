@@ -1,0 +1,14 @@
+<header>
+  <nav class="flex items-center justify-between bg-accent p-4">
+    <%= link_to '/', class: 'text-xl font-bold' do %>
+      <%= image_tag 'title_logo.png', class: 'h-11 w-auto' %>
+    <% end %>
+    <h1 class="font-bold text-4xl">saran!</h1>
+    <nav class="flex items-center space-x-4 text-base">
+      <%= link_to t(".to_schedule_index"), schedules_path, class: "rounded-lg py-2 px-4 text-primary hover:text-secondary font-medium" %>
+      <%= link_to t(".create_schedule"), new_schedule_path, class: "rounded-lg py-2 px-4 text-primary hover:text-secondary font-medium" %>
+      <%= link_to 'ログアウト', logout_path, data: { turbo_method: :delete }, class: "rounded-lg py-2 px-4 text-primary hover:text-secondary font-medium" %>
+      <%= image_tag 'logo.png', class: 'h-12 w-auto' %>
+    </nav>
+  </nav>
+</header>
