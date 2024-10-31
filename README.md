@@ -1,5 +1,6 @@
 ### サービス概要
-サービス名：Saran!
+サービス名：**Saran!**
+
 サービスURL：https://graduation-work-saran-app.onrender.com
 
 K-POPアイドルを全力で応援したい！そんなファンに役立つスケジュール管理ツールです。
