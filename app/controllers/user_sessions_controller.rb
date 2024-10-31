@@ -7,14 +7,17 @@ class UserSessionsController < ApplicationController
     @user = login(params[:email], params[:password])
 
     if @user
+      flash[:notice] = t("defaults.flash_message.logged_in")
       redirect_to schedules_path
     else
-      render :new
+      flash.now[:alert] = t("defaults.flash_message.invalid_credentials")
+      render :new, status: :unprocessable_entity
     end
   end
 
   def destroy
     logout
+    flash[:notice] = t("defaults.flash_message.logged_out")
     redirect_to root_path, status: :see_other
   end
 end

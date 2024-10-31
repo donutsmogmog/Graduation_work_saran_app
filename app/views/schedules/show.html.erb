@@ -1,10 +1,19 @@
-<p style="color: green"><%= notice %></p>
+<% if notice %>
+  <div class="mb-4 p-4 text-green-800 bg-green-100 border border-green-200 rounded-lg">
+    <%= notice %>
+  </div>
+<% end %>
+<br>
+<h1 class="text-2xl font-semibold mb-4"><%= t(".title") %></h1>
+<br>
+<div class="mb-6 p-6 bg-white shadow-md rounded-lg">
+  <%= render @schedule %>
+</div>
 
-<%= render @schedule %>
+<div class="flex space-x-4">
+  <%= link_to t(".edit_schedule"), edit_schedule_path(@schedule), class: "text-primary hover:text-primary-dark font-semibold" %>
 
-<div>
-  <%= link_to t(".edit_schedule"), edit_schedule_path(@schedule) %> 
-
-  <%= link_to t(".destroy_schedule"), '#', class: 'text-red-600 hover:text-red-800 delete-link', data: { post_url: schedule_path(@schedule) } %>
-
+  <%= link_to t(".delete_schedule"), '#', 
+    class: "text-red-600 hover:text-red-800 font-semibold delete-link", 
+    data: { post_url: schedule_path(@schedule) } %>
 </div>

@@ -3,6 +3,9 @@ ja:
     flash_message:
       created: "%{item}を作成しました"
       not_created: "%{item}を作成出来ませんでした"
+      logged_in: "ログインしました"
+      logged_out: "ログアウトしました"
+      invalid_credentials: "メールアドレスまたはパスワードが正しくありません"
       require_login: ログインしてください
       not_authorized: 権限がありません
       updated: "%{item}を更新しました"
@@ -12,21 +15,19 @@ ja:
   helpers:
     submit:
       create: 登録
-      submit: 保存
       update: 更新
+      login: ログイン
+      previous: 先月
     label:
       email: メールアドレス
       password: パスワード
   static_pages:
     top:
-      to_schedule_index: スケジュールへ
       to_register_page: 始める（会員登録）
-      to_login_page: ログイン
   user_sessions:
     new:
       title: ログイン
-      login: ログイン
-      to_register_page: 始める
+      to_register_page: 会員登録
       password_forget: パスワードをお忘れの方はこちら
   users:
     new:
@@ -34,22 +35,27 @@ ja:
       to_root_page: トップページへ
   schedules:
     index:
+      title: スケジュール一覧
       to_root_page: トップページへ
-      create_schedule: スケジュール登録
-      show_schedule: スケジュール詳細
     new:
+      title: スケジュール登録
       back_schedule_index: スケジュール一覧へ
     show:
+      title: スケジュール詳細
       edit_schedule: スケジュール編集
-      back_schedule_index: スケジュール一覧へ
-      destroy_schedule: スケジュール削除
+      delete_schedule: スケジュール削除
     edit:
+      title: スケジュール編集
       show_schedule: スケジュール詳細
       back_schedule_index: スケジュール一覧へ
   header:
-    login: ログイン
     logout: ログアウト
-    schedule: 掲示板
-    schedule_index: スケジュール一覧
+    to_schedule_index: スケジュール一覧
     create_schedule: スケジュール登録
-    edit_schedule: スケジュール編集
+  before_login_header:
+    to_register_page: 会員登録
+    to_login_page: ログイン
+  simple_calendar:
+    previous: "<<"
+    next: ">>"
+    week: 今日

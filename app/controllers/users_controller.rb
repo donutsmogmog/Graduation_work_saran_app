@@ -8,10 +8,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to root_path
-      # 最終的にはlogin_pathにする
+      redirect_to login_path
     else
-      render :new
+      flash.now[:alert] = t("defaults.flash_message.not_created", item: User.model_name.human)
+      render :new, status: :unprocessable_entity
     end
   end
 

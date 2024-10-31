@@ -1,12 +1,12 @@
 <% content_for :title, "Editing schedule" %>
-
-<h1><%= t("header.edit_schedule") %></h1>
-
+<br>
+<h1 class="text-2xl font-semibold mb-4"><%= t(".title") %></h1>
+<br>
 <%= render "form", schedule: @schedule %>
 
 <br>
 
 <div>
-  <%= link_to t(".show_schedule"), @schedule %> |
-  <%= link_to t(".back_schedule_index"), schedules_path %>
+  <%= link_to t(".show_schedule"), @schedule, class: "text-primary hover:underline mr-4" %>
+  <%= link_to t(".back_schedule_index"), schedules_path, class: "text-primary hover:underline mr-4" %>
 </div>
