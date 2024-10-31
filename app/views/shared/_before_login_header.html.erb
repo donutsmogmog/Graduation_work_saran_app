@@ -1,13 +1,11 @@
 <header>
-  <nav class="flex items-center justify-between bg-accent p-4">
-    <%= link_to '/', class: 'text-xl font-bold' do %>
-      <%= image_tag 'title_logo.png', class: 'h-11 w-auto' %>
+  <nav class="flex items-center justify-between bg-secondary p-4">
+    <%= link_to "/", class: "text-xl font-bold" do %>
+      <%= image_tag "title_logo.png", class: "h-11 w-auto" %>
     <% end %>
-    <h1 class="font-bold text-4xl">saran!</h1>
-    <nav class="flex items-center space-x-4 text-base">
-      <%= link_to t(".to_register_page"), new_user_path, class: "rounded-lg py-2 px-4 text-primary hover:text-secondary font-medium" %>
-      <%= link_to t(".to_login_page"), login_path, class: "rounded-lg py-2 px-4 text-primary hover:text-secondary font-medium" %>
-      <%= image_tag 'logo.png', class: 'h-12 w-auto' %>
-    </nav>
+  <nav class="flex items-center space-x-4 text-base">
+    <%= link_to t("before_login_header.to_register_page"), new_user_path, class: "rounded-lg py-2 px-4 text-primary hover:text-secondary font-medium" %>
+    <%= link_to t("before_login_header.to_login_page"), login_path, class: "rounded-lg py-2 px-4 text-primary hover:text-secondary font-medium" %>
+    <%= image_tag "logo.png", class: "h-12 w-auto" %>
   </nav>
 </header>

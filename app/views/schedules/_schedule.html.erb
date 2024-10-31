@@ -1,37 +1,42 @@
-<div id="<%= dom_id schedule %>">
   <p>
-    <strong><%= I18n.t('activerecord.attributes.schedule.title') %></strong>
-    <%= schedule.title %>
+    <strong class="text-gray-700"><%= I18n.t('activerecord.attributes.schedule.title') %>:</strong>
+    <span class="text-gray-900"><%= schedule.title %></span>
   </p>
 
   <p>
-    <strong><%= I18n.t('activerecord.attributes.schedule.description') %></strong>
-    <%= schedule.description %>
+    <strong class="text-gray-700"><%= I18n.t('activerecord.attributes.schedule.description') %>:</strong>
+    <span class="text-gray-900"><%= schedule.description %></span>
   </p>
 
   <p>
-    <strong><%= I18n.t('activerecord.attributes.artist.name') %></strong>
-    <%= schedule.artist.name %>
+    <strong class="text-gray-700"><%= I18n.t('activerecord.attributes.schedule.artist_id') %>:</strong>
+    <span class="text-gray-900"><%= schedule.artist.name %></span>
   </p>
 
   <p>
-    <strong><%= I18n.t('activerecord.attributes.category.name') %></strong>
-    <%= schedule.category.name %>
+    <strong class="text-gray-700"><%= I18n.t('activerecord.attributes.schedule.category_id') %>:</strong>
+    <span class="text-gray-900"><%= schedule.category.name %></span>
   </p>
 
   <p>
-    <strong><%= I18n.t('activerecord.attributes.schedule.start_time') %></strong>
-    <%= schedule.start_time %>
+    <strong class="text-gray-700"><%= I18n.t('activerecord.attributes.schedule.start_time') %>:</strong>
+    <span class="text-gray-900"><%= schedule.start_time.strftime('%Y年%m月%d日 %H:%M') %></span>
   </p>
 
   <p>
-    <strong><%= I18n.t('activerecord.attributes.schedule.end_time') %></strong>
-    <%= schedule.end_time %>
+    <strong class="text-gray-700"><%= I18n.t('activerecord.attributes.schedule.end_time') %>:</strong>
+    <span class="text-gray-900">
+      <% if schedule.end_time.present? %>
+        <%= schedule.end_time.strftime('%Y年%m月%d日 %H:%M') %>
+      <% else %>
+        <%= "未設定" %>
+      <% end %>
+    </span>
   </p>
 
   <p>
-    <strong><%= I18n.t('activerecord.attributes.schedule.show_remaining_time') %></strong>
-    <%= schedule.show_remaining_time %>
+    <strong class="text-gray-700"><%= I18n.t('activerecord.attributes.schedule.show_remaining_time') %>:</strong>
+    <span class="text-gray-900">
+      <%= schedule.show_remaining_time ? 'する' : 'しない' %>
+    </span>
   </p>
-
-</div>

@@ -1,16 +1,25 @@
+<% if notice.present? %>
+  <p class="mb-4 p-4 bg-green-100 text-green-600 font-semibold rounded-lg"><%= notice %></p>
+<% end %>
+<div class="flex justify-center mt-6">
+    <%= image_tag "logo.png", class: "w-full md:w-64 lg:w-1/2 max-h-screen" %>
+</div>
 <div class="flex justify-center items-center space-x-4">
   <div class="text-center max-w-2xl mx-auto my-10 px-5 text-gray-700">
-  <h1 class="text-4xl font-bold text-primary mb-4">K-POPファンのための</h1>
-  <h1 class="text-4xl font-bold text-primary mb-4">特別なスケジュール管理ツール</h1>
-  <p class="text-lg mb-6"> 大好きなK-POPアイドルを全力で応援したい、そんなあなたのために、ライブ、ミート&グリート、CDリリースなど、推しグループの最新スケジュールを一元管理できるツールを提供します。</p>
-  <p class="text-lg mb-6">
-  <span class="font-semibold">複数グループのスケジュールも一つのページでまとめて確認</span>
-  し、簡単に検索や管理が可能。さらに、音楽番組の投票スケジュールなど、K-POPファンならではの大切な情報を逃さずチェックできます！ </p>
-  <div class="bg-secondary text-white p-4 rounded-lg my-6">
-  <p class="text-lg font-medium"> K-POPの情報が溢れる今、あなただけの推し活ツールで、より効率的に、楽しく「推し活」をしましょう！ </p>
+    <h1 class="text-4xl font-bold text-primary mb-4">K-POPファンのための</h1>
+    <h1 class="text-4xl font-bold text-primary mb-4">特別なスケジュール管理ツール</h1>
+    <p class="text-lg mb-6"> 大好きなK-POPアイドルを全力で応援したい、そんなあなたのために、ライブ、ミート&グリート、CDリリースなど、推しグループの最新スケジュールを一元管理できるツールを提供します。</p>
+    <p class="text-lg mb-6">
+    <span class="font-semibold">複数グループのスケジュールも一つのページでまとめて確認</span>
+    し、簡単に検索や管理が可能。さらに、音楽番組の投票スケジュールなど、K-POPファンならではの大切な情報を逃さずチェックできます！ </p>
+    <div class="bg-secondary text-white p-4 rounded-lg my-6">
+      <p class="text-lg text-accent font-semibold"> K-POPの情報が溢れる今、あなただけの推し活ツールで、より効率的に！楽しく！「推し活」をしましょう！ </p>
+    </div>
+    <%= link_to t(".to_register_page"), new_user_path, class: "py-4 px-4 bg-primary text-white font-semibold rounded-md hover:bg-primary-dark w-full" %> </div>
   </div>
-  <%= link_to t(".to_register_page"), new_user_path, class: "btn-primary py-3 px-5 rounded-full text-black text-lg mt-5 inline-block" %> </div>
-</div>
+<br>
+<br>
+<p class="text-lg mb-6"> 利用イメージ</p>
 <div class="flex justify-center mt-6">
-    <%= image_tag "usage_image.png", class: "w-full md:w-64 lg:w-1/2 max-h-screen" %>
+  <%= image_tag "usage_image.png", class: "w-full md:w-64 lg:w-1/2 max-h-screen" %>
 </div>

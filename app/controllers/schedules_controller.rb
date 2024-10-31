@@ -52,7 +52,7 @@ class SchedulesController < ApplicationController
     @schedule.destroy!
 
     respond_to do |format|
-      format.html { redirect_to schedules_path, status: :see_other, notice: "Schedule was successfully destroyed." }
+      format.html { redirect_to schedules_path, status: :see_other, notice: t("defaults.flash_message.deleted", item: Schedule.model_name.human) }
       format.json { head :no_content }
     end
   end
