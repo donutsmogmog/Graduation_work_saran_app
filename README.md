@@ -1,4 +1,6 @@
 ### サービス概要
+サービス名：Saran!
+サービスURL：https://graduation-work-saran-app.onrender.com
 
 K-POPアイドルを全力で応援したい！そんなファンに役立つスケジュール管理ツールです。
 
@@ -43,7 +45,6 @@ K-POPアイドルを全力で応援したい！そんなファンに役立つス
 
 ### 機能候補
 
-
 ■ MVP
 
   - K-POP推し活紹介ページ（簡単な用語説明、音楽番組ランキングへの投票ガイド）
@@ -78,3 +79,6 @@ Figma：https://www.figma.com/design/FRgf2nNpLLaUfKEzKbyTTf/%E5%8D%92%E6%A5%AD%E
 - リレーションの誤表記を修正しました
 
 [![Image from Gyazo](https://i.gyazo.com/2f3f96e6841404cd9906a0422839c824.png)](https://gyazo.com/2f3f96e6841404cd9906a0422839c824)
+
+### 利用イメージ
+[![Image from Gyazo](https://i.gyazo.com/b0ffcf93961e8f9e89ceaf0238f51d38.png)](https://gyazo.com/b0ffcf93961e8f9e89ceaf0238f51d38)
